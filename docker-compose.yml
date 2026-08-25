@@ -1,10 +1,6 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: notes-app:latest
-    container_name: express-app
+    image: "hansda091/notes-app" 
     ports:
       - "3000:3000"
     restart: unless-stopped
